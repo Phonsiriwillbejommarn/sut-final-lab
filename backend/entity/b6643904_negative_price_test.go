@@ -11,8 +11,8 @@ func TestnegativePrice(t *testing.T) {
 	g := NewGomegaWithT(t)
 	books := Books{
 		Title: "Jommarn",
-		Price: 55,
-		Code:  "BK1234568785",
+		Price: 0,
+		Code:  "BK123456",
 	}
 
 	ok, err := govalidtor.Struct(books)
